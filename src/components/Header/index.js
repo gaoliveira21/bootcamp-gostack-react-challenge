@@ -1,4 +1,7 @@
+import { FaUserCircle } from 'react-icons/fa';
 import React, { Component } from 'react';
+
+import './style.css'
 
 class Header extends Component {
 
@@ -8,6 +11,7 @@ class Header extends Component {
         <h1 className="brand">Facebook</h1>
         <div className="my-profile">
           <p>Meu perfil</p>
+          <FaUserCircle size={26} color="#fff" />
         </div>
       </div>
     );
