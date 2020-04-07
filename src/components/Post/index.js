@@ -3,21 +3,22 @@ import React, { Component } from 'react';
 import './style.css';
 
 class Post extends Component {
+  state = this.props.data;
+
   render() {
+    console.log(this.props)
     return (
       <div className="post">
         <div className="post-header">
-          <img src="https://avatars2.githubusercontent.com/u/7559318?s=400&u=9b45fc98ab22e71efa4951eee14cf349a73411ec&v=4" className="avatar" />
+          <img src={this.state.author.avatar} className="avatar" />
           <div className="post-info">
-            <p>Lucas Montano</p>
-            <span>04 Jun 2019</span>
+            <p>{this.state.author.name}</p>
+            <span>{this.state.date}</span>
           </div>
         </div>
         <div className="post-body">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse nec tortor nisi. Ut nibh quam, feugiat vitae ipsum quis,
-            elementum aliquam justo.
+            {this.state.content}
           </p>
         </div>
         <div className="divider"></div>

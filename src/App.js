@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Post from './components/Post';
+import PostList from './components/PostList';
 import Header from './components/Header';
 import './App.css';
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <div className="container">
-        <Post />
+        <PostList />
       </div>
     </>
   );
