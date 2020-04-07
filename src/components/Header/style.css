@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 div.header h1 {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
 }
 
@@ -14,10 +11,10 @@ div.header {
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
+  margin-bottom: 20px;
 }
 
-div.header div.my-profile {
-  font-family: 'Roboto', sans-serif;
+div.header div.my-profile { 
   display: flex;
   flex-direction: row;
   align-items: center;
