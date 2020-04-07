@@ -40,6 +40,14 @@ class PostList extends Component {
               avatar: "https://avatars2.githubusercontent.com/u/7559318?s=400&u=9b45fc98ab22e71efa4951eee14cf349a73411ec&v=4"
             },
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dui non velit consectetur laoreet ut ac libero.Pellentesque in consectetur velit. Suspendisse"
+          },
+          {
+            id: 1,
+            author: {
+              name: "Diego Fernandes",
+              avatar: "https://avatars1.githubusercontent.com/u/2254731?s=400&u=dc1a4fd280cdc3c6977bacf57cbfeb8ba0917f27&v=4"
+            },
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dui non velit consectetur laoreet ut ac libero.Pellentesque in consectetur velit. Suspendisse"
           }
         ]
       }
@@ -47,7 +55,7 @@ class PostList extends Component {
   };
 
   render() {
-    return (this.state.posts.map(post => <Post key={post.id} data={post}/> ));
+    return (this.state.posts.map(post => <Post key={post.id} data={post} />));
   }
 
 }
